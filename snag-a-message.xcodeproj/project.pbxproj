@@ -8,13 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		7B78E5D91C6680FC00518D6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B78E5D81C6680FC00518D6D /* AppDelegate.swift */; };
-		7B78E5DB1C6680FC00518D6D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B78E5DA1C6680FC00518D6D /* ViewController.swift */; };
 		7B78E5DE1C6680FC00518D6D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B78E5DC1C6680FC00518D6D /* Main.storyboard */; };
 		7B78E5E11C6680FC00518D6D /* snag_a_message.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7B78E5DF1C6680FC00518D6D /* snag_a_message.xcdatamodeld */; };
 		7B78E5E31C6680FC00518D6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B78E5E21C6680FC00518D6D /* Assets.xcassets */; };
 		7B78E5E61C6680FC00518D6D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B78E5E41C6680FC00518D6D /* LaunchScreen.storyboard */; };
 		7B78E5F11C6680FC00518D6D /* snag_a_messageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B78E5F01C6680FC00518D6D /* snag_a_messageTests.swift */; };
 		7B78E5FC1C6680FC00518D6D /* snag_a_messageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B78E5FB1C6680FC00518D6D /* snag_a_messageUITests.swift */; };
+		7B78E60A1C66854C00518D6D /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B78E6091C66854C00518D6D /* Bolts.framework */; };
+		7B78E60C1C66855000518D6D /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B78E60B1C66855000518D6D /* CryptoSwift.framework */; };
+		7B78E60E1C66855300518D6D /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B78E60D1C66855300518D6D /* Firebase.framework */; };
+		7B78E6101C66855800518D6D /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B78E60F1C66855800518D6D /* Parse.framework */; };
+		7B78E6121C66856200518D6D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B78E6111C66856200518D6D /* AudioToolbox.framework */; };
+		7B78E6141C66856B00518D6D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B78E6131C66856B00518D6D /* SystemConfiguration.framework */; };
+		7B78E6161C66857400518D6D /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B78E6151C66857400518D6D /* libsqlite3.0.tbd */; };
+		7B78E6181C6686F800518D6D /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B78E6171C6686F800518D6D /* AppConstants.swift */; };
+		7B78E61F1C668B4F00518D6D /* CommentBubbleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B78E61E1C668B4F00518D6D /* CommentBubbleData.swift */; };
+		7B78E6211C668FE700518D6D /* CommentBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B78E6201C668FE700518D6D /* CommentBubble.swift */; };
+		7B78E6231C6690B700518D6D /* CommentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B78E6221C6690B700518D6D /* CommentService.swift */; };
+		7B78E6251C669BE200518D6D /* SnagCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B78E6241C669BE200518D6D /* SnagCache.swift */; };
+		7B78E6271C669D9000518D6D /* SnagUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B78E6261C669D9000518D6D /* SnagUser.swift */; };
+		7B78E6291C66A21200518D6D /* CommentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B78E6281C66A21200518D6D /* CommentData.swift */; };
+		7B78E62B1C66A52F00518D6D /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B78E62A1C66A52F00518D6D /* UserService.swift */; };
+		7B78E62D1C66A60900518D6D /* AppExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B78E62C1C66A60900518D6D /* AppExtensions.swift */; };
+		7B78E6341C66A99900518D6D /* LoadingScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B78E6331C66A99900518D6D /* LoadingScreenViewController.swift */; };
+		7B78E6361C66AAE500518D6D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B78E6351C66AAE500518D6D /* LoginViewController.swift */; };
+		7B78E6381C66AB4900518D6D /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B78E6371C66AB4900518D6D /* SignUpViewController.swift */; };
+		7B78E63A1C66ABF600518D6D /* SnagAMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B78E6391C66ABF600518D6D /* SnagAMessageViewController.swift */; };
+		7B78E63C1C66B28900518D6D /* UInt8Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B78E63B1C66B28900518D6D /* UInt8Word.swift */; };
+		7B78E63E1C67051100518D6D /* PlusButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B78E63D1C67051100518D6D /* PlusButton.swift */; };
 		D35CFD1C78B6B737A405A11A /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A20B164E8E751E5E688715B8 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,7 +60,6 @@
 		640D7B2A5AA749A328396267 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		7B78E5D51C6680FC00518D6D /* snag-a-message.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "snag-a-message.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B78E5D81C6680FC00518D6D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7B78E5DA1C6680FC00518D6D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7B78E5DD1C6680FC00518D6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7B78E5E01C6680FC00518D6D /* snag_a_message.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = snag_a_message.xcdatamodel; sourceTree = "<group>"; };
 		7B78E5E21C6680FC00518D6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +71,29 @@
 		7B78E5F71C6680FC00518D6D /* snag-a-messageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "snag-a-messageUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B78E5FB1C6680FC00518D6D /* snag_a_messageUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = snag_a_messageUITests.swift; sourceTree = "<group>"; };
 		7B78E5FD1C6680FC00518D6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B78E6091C66854C00518D6D /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "Pods/../build/Debug-iphoneos/Bolts.framework"; sourceTree = "<group>"; };
+		7B78E60B1C66855000518D6D /* CryptoSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CryptoSwift.framework; path = "Pods/../build/Debug-iphoneos/CryptoSwift.framework"; sourceTree = "<group>"; };
+		7B78E60D1C66855300518D6D /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Firebase.framework; path = "Pods/../build/Debug-iphoneos/Firebase.framework"; sourceTree = "<group>"; };
+		7B78E60F1C66855800518D6D /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "Pods/../build/Debug-iphoneos/Parse.framework"; sourceTree = "<group>"; };
+		7B78E6111C66856200518D6D /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		7B78E6131C66856B00518D6D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		7B78E6151C66857400518D6D /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		7B78E6171C6686F800518D6D /* AppConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		7B78E61E1C668B4F00518D6D /* CommentBubbleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentBubbleData.swift; sourceTree = "<group>"; };
+		7B78E6201C668FE700518D6D /* CommentBubble.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentBubble.swift; sourceTree = "<group>"; };
+		7B78E6221C6690B700518D6D /* CommentService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentService.swift; sourceTree = "<group>"; };
+		7B78E6241C669BE200518D6D /* SnagCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnagCache.swift; sourceTree = "<group>"; };
+		7B78E6261C669D9000518D6D /* SnagUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnagUser.swift; sourceTree = "<group>"; };
+		7B78E6281C66A21200518D6D /* CommentData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentData.swift; sourceTree = "<group>"; };
+		7B78E62A1C66A52F00518D6D /* UserService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		7B78E62C1C66A60900518D6D /* AppExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppExtensions.swift; sourceTree = "<group>"; };
+		7B78E62E1C66A6E300518D6D /* snag-a-message-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "snag-a-message-Bridging-Header.h"; sourceTree = "<group>"; };
+		7B78E6331C66A99900518D6D /* LoadingScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingScreenViewController.swift; sourceTree = "<group>"; };
+		7B78E6351C66AAE500518D6D /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		7B78E6371C66AB4900518D6D /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		7B78E6391C66ABF600518D6D /* SnagAMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnagAMessageViewController.swift; sourceTree = "<group>"; };
+		7B78E63B1C66B28900518D6D /* UInt8Word.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UInt8Word.swift; sourceTree = "<group>"; };
+		7B78E63D1C67051100518D6D /* PlusButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlusButton.swift; sourceTree = "<group>"; };
 		A20B164E8E751E5E688715B8 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6FF91D34E6C45701C3AA62D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -60,6 +103,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B78E6161C66857400518D6D /* libsqlite3.0.tbd in Frameworks */,
+				7B78E6141C66856B00518D6D /* SystemConfiguration.framework in Frameworks */,
+				7B78E6121C66856200518D6D /* AudioToolbox.framework in Frameworks */,
+				7B78E6101C66855800518D6D /* Parse.framework in Frameworks */,
+				7B78E60E1C66855300518D6D /* Firebase.framework in Frameworks */,
+				7B78E60C1C66855000518D6D /* CryptoSwift.framework in Frameworks */,
+				7B78E60A1C66854C00518D6D /* Bolts.framework in Frameworks */,
 				D35CFD1C78B6B737A405A11A /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -106,13 +156,11 @@
 		7B78E5D71C6680FC00518D6D /* snag-a-message */ = {
 			isa = PBXGroup;
 			children = (
-				7B78E5D81C6680FC00518D6D /* AppDelegate.swift */,
-				7B78E5DA1C6680FC00518D6D /* ViewController.swift */,
-				7B78E5DC1C6680FC00518D6D /* Main.storyboard */,
-				7B78E5E21C6680FC00518D6D /* Assets.xcassets */,
-				7B78E5E41C6680FC00518D6D /* LaunchScreen.storyboard */,
-				7B78E5E71C6680FC00518D6D /* Info.plist */,
-				7B78E5DF1C6680FC00518D6D /* snag_a_message.xcdatamodeld */,
+				7B78E61D1C66887800518D6D /* Services */,
+				7B78E61C1C66886D00518D6D /* Utils */,
+				7B78E61B1C66886700518D6D /* Models */,
+				7B78E61A1C66885A00518D6D /* View Controllers */,
+				7B78E6191C66883700518D6D /* Core */,
 			);
 			path = "snag-a-message";
 			sourceTree = "<group>";
@@ -135,6 +183,79 @@
 			path = "snag-a-messageUITests";
 			sourceTree = "<group>";
 		};
+		7B78E6191C66883700518D6D /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				7B78E6171C6686F800518D6D /* AppConstants.swift */,
+				7B78E5DF1C6680FC00518D6D /* snag_a_message.xcdatamodeld */,
+				7B78E5E71C6680FC00518D6D /* Info.plist */,
+				7B78E5E41C6680FC00518D6D /* LaunchScreen.storyboard */,
+				7B78E5DC1C6680FC00518D6D /* Main.storyboard */,
+				7B78E5E21C6680FC00518D6D /* Assets.xcassets */,
+				7B78E5D81C6680FC00518D6D /* AppDelegate.swift */,
+				7B78E62C1C66A60900518D6D /* AppExtensions.swift */,
+				7B78E62E1C66A6E300518D6D /* snag-a-message-Bridging-Header.h */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		7B78E61A1C66885A00518D6D /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7B78E6331C66A99900518D6D /* LoadingScreenViewController.swift */,
+				7B78E6351C66AAE500518D6D /* LoginViewController.swift */,
+				7B78E6371C66AB4900518D6D /* SignUpViewController.swift */,
+				7B78E6391C66ABF600518D6D /* SnagAMessageViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		7B78E61B1C66886700518D6D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7B78E6321C66A79E00518D6D /* Cloud Models */,
+				7B78E6311C66A79100518D6D /* Core Models */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		7B78E61C1C66886D00518D6D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		7B78E61D1C66887800518D6D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7B78E6221C6690B700518D6D /* CommentService.swift */,
+				7B78E62A1C66A52F00518D6D /* UserService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		7B78E6311C66A79100518D6D /* Core Models */ = {
+			isa = PBXGroup;
+			children = (
+				7B78E6241C669BE200518D6D /* SnagCache.swift */,
+				7B78E6201C668FE700518D6D /* CommentBubble.swift */,
+				7B78E61E1C668B4F00518D6D /* CommentBubbleData.swift */,
+				7B78E63B1C66B28900518D6D /* UInt8Word.swift */,
+				7B78E63D1C67051100518D6D /* PlusButton.swift */,
+			);
+			name = "Core Models";
+			sourceTree = "<group>";
+		};
+		7B78E6321C66A79E00518D6D /* Cloud Models */ = {
+			isa = PBXGroup;
+			children = (
+				7B78E6281C66A21200518D6D /* CommentData.swift */,
+				7B78E6261C669D9000518D6D /* SnagUser.swift */,
+			);
+			name = "Cloud Models";
+			sourceTree = "<group>";
+		};
 		882EEBD823F8B581711D338D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -147,6 +268,13 @@
 		CA141302E36AAE916D11AA7F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7B78E6151C66857400518D6D /* libsqlite3.0.tbd */,
+				7B78E6131C66856B00518D6D /* SystemConfiguration.framework */,
+				7B78E6111C66856200518D6D /* AudioToolbox.framework */,
+				7B78E60F1C66855800518D6D /* Parse.framework */,
+				7B78E60D1C66855300518D6D /* Firebase.framework */,
+				7B78E60B1C66855000518D6D /* CryptoSwift.framework */,
+				7B78E6091C66854C00518D6D /* Bolts.framework */,
 				A20B164E8E751E5E688715B8 /* Pods.framework */,
 			);
 			name = Frameworks;
@@ -334,9 +462,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B78E6361C66AAE500518D6D /* LoginViewController.swift in Sources */,
+				7B78E63E1C67051100518D6D /* PlusButton.swift in Sources */,
 				7B78E5E11C6680FC00518D6D /* snag_a_message.xcdatamodeld in Sources */,
-				7B78E5DB1C6680FC00518D6D /* ViewController.swift in Sources */,
+				7B78E63A1C66ABF600518D6D /* SnagAMessageViewController.swift in Sources */,
+				7B78E6211C668FE700518D6D /* CommentBubble.swift in Sources */,
+				7B78E62D1C66A60900518D6D /* AppExtensions.swift in Sources */,
+				7B78E6271C669D9000518D6D /* SnagUser.swift in Sources */,
 				7B78E5D91C6680FC00518D6D /* AppDelegate.swift in Sources */,
+				7B78E6181C6686F800518D6D /* AppConstants.swift in Sources */,
+				7B78E62B1C66A52F00518D6D /* UserService.swift in Sources */,
+				7B78E6381C66AB4900518D6D /* SignUpViewController.swift in Sources */,
+				7B78E61F1C668B4F00518D6D /* CommentBubbleData.swift in Sources */,
+				7B78E6231C6690B700518D6D /* CommentService.swift in Sources */,
+				7B78E6341C66A99900518D6D /* LoadingScreenViewController.swift in Sources */,
+				7B78E6251C669BE200518D6D /* SnagCache.swift in Sources */,
+				7B78E6291C66A21200518D6D /* CommentData.swift in Sources */,
+				7B78E63C1C66B28900518D6D /* UInt8Word.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -477,10 +619,17 @@
 			baseConfigurationReference = 640D7B2A5AA749A328396267 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = "snag-a-message/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.romainehinds.snag-a-message";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "snag-a-message/snag-a-message-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -489,10 +638,16 @@
 			baseConfigurationReference = B6FF91D34E6C45701C3AA62D /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = "snag-a-message/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.romainehinds.snag-a-message";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "snag-a-message/snag-a-message-Bridging-Header.h";
 			};
 			name = Release;
 		};
