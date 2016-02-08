@@ -41,6 +41,8 @@
 		7B78E6441C680F2900518D6D /* RoundedBlurEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B78E6431C680F2900518D6D /* RoundedBlurEffectView.swift */; };
 		7B78E6461C68107200518D6D /* RoundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B78E6451C68107200518D6D /* RoundImageView.swift */; };
 		7B78E6491C68121800518D6D /* MessageCollectionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B78E6481C68121800518D6D /* MessageCollectionDelegate.swift */; };
+		80862C621C6925070074342D /* Conversation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80862C611C6925070074342D /* Conversation.swift */; };
+		80862C641C6929230074342D /* UserServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80862C631C6929230074342D /* UserServiceProtocol.swift */; };
 		D35CFD1C78B6B737A405A11A /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A20B164E8E751E5E688715B8 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -104,6 +106,8 @@
 		7B78E6431C680F2900518D6D /* RoundedBlurEffectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedBlurEffectView.swift; sourceTree = "<group>"; };
 		7B78E6451C68107200518D6D /* RoundImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundImageView.swift; sourceTree = "<group>"; };
 		7B78E6481C68121800518D6D /* MessageCollectionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageCollectionDelegate.swift; sourceTree = "<group>"; };
+		80862C611C6925070074342D /* Conversation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Conversation.swift; sourceTree = "<group>"; };
+		80862C631C6929230074342D /* UserServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserServiceProtocol.swift; sourceTree = "<group>"; };
 		A20B164E8E751E5E688715B8 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6FF91D34E6C45701C3AA62D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -267,6 +271,7 @@
 			children = (
 				7B78E6281C66A21200518D6D /* CommentData.swift */,
 				7B78E6261C669D9000518D6D /* SnagUser.swift */,
+				80862C611C6925070074342D /* Conversation.swift */,
 			);
 			name = "Cloud Models";
 			sourceTree = "<group>";
@@ -275,6 +280,7 @@
 			isa = PBXGroup;
 			children = (
 				7B78E6481C68121800518D6D /* MessageCollectionDelegate.swift */,
+				80862C631C6929230074342D /* UserServiceProtocol.swift */,
 			);
 			name = Delegates;
 			sourceTree = "<group>";
@@ -487,6 +493,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B78E6361C66AAE500518D6D /* LoginViewController.swift in Sources */,
+				80862C641C6929230074342D /* UserServiceProtocol.swift in Sources */,
 				7B78E63E1C67051100518D6D /* PlusButton.swift in Sources */,
 				7B78E5E11C6680FC00518D6D /* snag_a_message.xcdatamodeld in Sources */,
 				7B78E63A1C66ABF600518D6D /* SnagAMessageViewController.swift in Sources */,
@@ -502,6 +509,7 @@
 				7B78E6381C66AB4900518D6D /* SignUpViewController.swift in Sources */,
 				7B78E6491C68121800518D6D /* MessageCollectionDelegate.swift in Sources */,
 				7B78E61F1C668B4F00518D6D /* CommentBubbleData.swift in Sources */,
+				80862C621C6925070074342D /* Conversation.swift in Sources */,
 				7B78E6231C6690B700518D6D /* CommentService.swift in Sources */,
 				7B78E6341C66A99900518D6D /* LoadingScreenViewController.swift in Sources */,
 				7B78E6251C669BE200518D6D /* SnagCache.swift in Sources */,
@@ -653,11 +661,13 @@
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = "snag-a-message/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.romainehinds.snag-a-message";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "snag-a-message/snag-a-message-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -672,10 +682,12 @@
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = "snag-a-message/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.romainehinds.snag-a-message";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "snag-a-message/snag-a-message-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

@@ -30,6 +30,7 @@ class SnagUser: PFObject, PFSubclassing {
     
     @NSManaged var secretKey: String?
     
+    @NSManaged var allConversations: [SnagUser : Conversation]
     
     var friends: [SnagUser]{
         didSet{
@@ -49,6 +50,14 @@ class SnagUser: PFObject, PFSubclassing {
         }
     }
     
+    var conversations: [Conversation] {
+        didSet {
+            if let last = self.conversations.last {
+                self.allConversations[last.receiver] = last
+            }
+        }
+    }
+    
     var friendsCount: Int {
         get {
             return self.friends.count
@@ -64,15 +73,40 @@ class SnagUser: PFObject, PFSubclassing {
     override init() {
         self.friends = [SnagUser]()
         self.messages = [CommentData]()
+        self.conversations = [Conversation]()
         super.init()
     }
     
     init(user: PFUser, withUsername username: String) {
         self.friends = [SnagUser]()
         self.messages = [CommentData]()
+        self.conversations = [Conversation]()
         super.init()
         self.user = user
         self.username = username
     }
+    
+    func hasFriend(user: SnagUser) -> Bool {
+        return self.hasFriend(withUsername: user.username)
+    }
+    
+    func hasFriend(withUsername username: String) -> Bool {
+        return allFriends.keys.contains(username)
+    }
+    
+    func getFriendByUsername(username: String) -> SnagUser! {
+        if hasFriend(withUsername: username) {
+            if let user = self.allFriends[username] {
+                return user
+            }else{
+                return nil
+            }
+        }else{
+            return nil
+        }
+    }
+    
+    
+    
     
 }

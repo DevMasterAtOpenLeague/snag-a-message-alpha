@@ -19,6 +19,17 @@ extension NSDate {
             return formatter
         }()
     }
+    
+    static func isExpired(timeStamp stamp: String) -> Bool {
+        let current: Int = Int(NSDate().formattedTimestamp)!
+        let given: Int = Int(stamp)!
+        
+        if current >= given {
+            return true
+        }else{
+            return false
+        }
+    }
     var formattedTimestamp: String {
         return Date.formatterOLTimestamp.stringFromDate(self)
     }

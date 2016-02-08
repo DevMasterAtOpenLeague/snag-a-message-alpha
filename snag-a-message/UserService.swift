@@ -10,6 +10,8 @@ import Foundation
 import CryptoSwift
 import Parse
 
+let userService: UserService = UserService.sharedService
+
 class UserService {
     
     static let sharedService = UserService()
@@ -18,6 +20,23 @@ class UserService {
     var currentSnagUser: SnagUser!
     
     private init(){
+        
+    }
+    
+    func setCurrentReceiver(username: String) {
+        
+        if currentSnagUser.hasFriend(username) {
+            let user: SnagUser = currentSnagUser.getFriendByUsername(username)
+            let query = PFQuery(className: SNAG_USER_CLASS_KEY)
+            query.getObjectInBackgroundWithId(user.objectId!, block: {
+                (user, error) -> Void in
+                if error == nil {
+                    if let user = user as? SnagUser {
+                        commentService.currentRecevicer = user
+                    }
+                }
+            })
+        }
         
     }
     
@@ -43,6 +62,8 @@ class UserService {
         
         user.secretKey = secretWord.word
         user.iv = ivWord.word
+        user.encryptorId = NSUUID().UUIDString
+        
         do{
             try user.user.signUp()
             
