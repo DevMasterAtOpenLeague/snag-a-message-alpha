@@ -16,7 +16,7 @@ class PlusButton: UIButton {
     // An empty implementation adversely affects performance during animation.
     override func drawRect(rect: CGRect) {
         var path = UIBezierPath(ovalInRect: rect)
-        UIColor.blueColor().setFill()
+        UIColor.greenColor().setFill()
         path.fill()
         
         //Set up the width and height variables

@@ -19,6 +19,9 @@ let loginScreenStoryboardId = "loginScreenViewId"
 let signUpScreenStoryboardId = "signUpViewId"
 let snagAMessageScreenStoryboardId = "snagAMessageViewId"
 
+//MARK:- Collection View Cell Ids
+let messageViewCellId = "messageViewCell"
+
 //MARK:- SnagUser Class
 let SNAG_USER_CLASS_KEY = "SnagUser"
 let SNAG_USER_USERNAME_KEY = "username"

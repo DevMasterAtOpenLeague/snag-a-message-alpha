@@ -36,6 +36,11 @@
 		7B78E63A1C66ABF600518D6D /* SnagAMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B78E6391C66ABF600518D6D /* SnagAMessageViewController.swift */; };
 		7B78E63C1C66B28900518D6D /* UInt8Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B78E63B1C66B28900518D6D /* UInt8Word.swift */; };
 		7B78E63E1C67051100518D6D /* PlusButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B78E63D1C67051100518D6D /* PlusButton.swift */; };
+		7B78E6401C6806A000518D6D /* image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B78E63F1C6806A000518D6D /* image.xcassets */; };
+		7B78E6421C680EB200518D6D /* MessageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B78E6411C680EB200518D6D /* MessageCollectionViewCell.swift */; };
+		7B78E6441C680F2900518D6D /* RoundedBlurEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B78E6431C680F2900518D6D /* RoundedBlurEffectView.swift */; };
+		7B78E6461C68107200518D6D /* RoundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B78E6451C68107200518D6D /* RoundImageView.swift */; };
+		7B78E6491C68121800518D6D /* MessageCollectionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B78E6481C68121800518D6D /* MessageCollectionDelegate.swift */; };
 		D35CFD1C78B6B737A405A11A /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A20B164E8E751E5E688715B8 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -94,6 +99,11 @@
 		7B78E6391C66ABF600518D6D /* SnagAMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnagAMessageViewController.swift; sourceTree = "<group>"; };
 		7B78E63B1C66B28900518D6D /* UInt8Word.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UInt8Word.swift; sourceTree = "<group>"; };
 		7B78E63D1C67051100518D6D /* PlusButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlusButton.swift; sourceTree = "<group>"; };
+		7B78E63F1C6806A000518D6D /* image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = image.xcassets; sourceTree = "<group>"; };
+		7B78E6411C680EB200518D6D /* MessageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageCollectionViewCell.swift; sourceTree = "<group>"; };
+		7B78E6431C680F2900518D6D /* RoundedBlurEffectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedBlurEffectView.swift; sourceTree = "<group>"; };
+		7B78E6451C68107200518D6D /* RoundImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundImageView.swift; sourceTree = "<group>"; };
+		7B78E6481C68121800518D6D /* MessageCollectionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageCollectionDelegate.swift; sourceTree = "<group>"; };
 		A20B164E8E751E5E688715B8 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6FF91D34E6C45701C3AA62D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -156,6 +166,7 @@
 		7B78E5D71C6680FC00518D6D /* snag-a-message */ = {
 			isa = PBXGroup;
 			children = (
+				7B78E6471C6811FA00518D6D /* Delegates */,
 				7B78E61D1C66887800518D6D /* Services */,
 				7B78E61C1C66886D00518D6D /* Utils */,
 				7B78E61B1C66886700518D6D /* Models */,
@@ -195,6 +206,7 @@
 				7B78E5D81C6680FC00518D6D /* AppDelegate.swift */,
 				7B78E62C1C66A60900518D6D /* AppExtensions.swift */,
 				7B78E62E1C66A6E300518D6D /* snag-a-message-Bridging-Header.h */,
+				7B78E63F1C6806A000518D6D /* image.xcassets */,
 			);
 			name = Core;
 			sourceTree = "<group>";
@@ -243,6 +255,9 @@
 				7B78E61E1C668B4F00518D6D /* CommentBubbleData.swift */,
 				7B78E63B1C66B28900518D6D /* UInt8Word.swift */,
 				7B78E63D1C67051100518D6D /* PlusButton.swift */,
+				7B78E6411C680EB200518D6D /* MessageCollectionViewCell.swift */,
+				7B78E6431C680F2900518D6D /* RoundedBlurEffectView.swift */,
+				7B78E6451C68107200518D6D /* RoundImageView.swift */,
 			);
 			name = "Core Models";
 			sourceTree = "<group>";
@@ -254,6 +269,14 @@
 				7B78E6261C669D9000518D6D /* SnagUser.swift */,
 			);
 			name = "Cloud Models";
+			sourceTree = "<group>";
+		};
+		7B78E6471C6811FA00518D6D /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				7B78E6481C68121800518D6D /* MessageCollectionDelegate.swift */,
+			);
+			name = Delegates;
 			sourceTree = "<group>";
 		};
 		882EEBD823F8B581711D338D /* Pods */ = {
@@ -388,6 +411,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B78E5E61C6680FC00518D6D /* LaunchScreen.storyboard in Resources */,
+				7B78E6401C6806A000518D6D /* image.xcassets in Resources */,
 				7B78E5E31C6680FC00518D6D /* Assets.xcassets in Resources */,
 				7B78E5DE1C6680FC00518D6D /* Main.storyboard in Resources */,
 			);
@@ -466,6 +490,9 @@
 				7B78E63E1C67051100518D6D /* PlusButton.swift in Sources */,
 				7B78E5E11C6680FC00518D6D /* snag_a_message.xcdatamodeld in Sources */,
 				7B78E63A1C66ABF600518D6D /* SnagAMessageViewController.swift in Sources */,
+				7B78E6441C680F2900518D6D /* RoundedBlurEffectView.swift in Sources */,
+				7B78E6461C68107200518D6D /* RoundImageView.swift in Sources */,
+				7B78E6421C680EB200518D6D /* MessageCollectionViewCell.swift in Sources */,
 				7B78E6211C668FE700518D6D /* CommentBubble.swift in Sources */,
 				7B78E62D1C66A60900518D6D /* AppExtensions.swift in Sources */,
 				7B78E6271C669D9000518D6D /* SnagUser.swift in Sources */,
@@ -473,6 +500,7 @@
 				7B78E6181C6686F800518D6D /* AppConstants.swift in Sources */,
 				7B78E62B1C66A52F00518D6D /* UserService.swift in Sources */,
 				7B78E6381C66AB4900518D6D /* SignUpViewController.swift in Sources */,
+				7B78E6491C68121800518D6D /* MessageCollectionDelegate.swift in Sources */,
 				7B78E61F1C668B4F00518D6D /* CommentBubbleData.swift in Sources */,
 				7B78E6231C6690B700518D6D /* CommentService.swift in Sources */,
 				7B78E6341C66A99900518D6D /* LoadingScreenViewController.swift in Sources */,
